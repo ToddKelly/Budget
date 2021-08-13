@@ -1,3 +1,4 @@
+
 let transactions = [];
 let myChart;
 
@@ -135,6 +136,7 @@ function sendTransaction(isAdding) {
     }
   })
   .catch(err => {
+    console.log (transaction);
     // fetch failed, so save in indexed db
     saveRecord(transaction);
 
